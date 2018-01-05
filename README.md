@@ -2,20 +2,14 @@
 
 **TODO: Add description**
 
-## Installation
+## Leibniz Formula benchmark for Flow
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `lei` to your list of dependencies in `mix.exs`:
 
 ```elixir
-def deps do
-  [
-    {:lei, "~> 0.1.0"}
-  ]
-end
+iex> :timer.tc(fn -> IO.puts LeibnizFormula.calc() end) |> elem(0) |>  Kernel./(1000000)
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/lei](https://hexdocs.pm/lei).
+[Qiita](https://qiita.com/hanada/items/c91788bcac2a40f1bb05#comment-b69e6585e1b86b5c03f7)
 
