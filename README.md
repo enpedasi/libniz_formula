@@ -4,9 +4,6 @@
 
 ## Leibniz Formula benchmark for Flow
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `lei` to your list of dependencies in `mix.exs`:
-
 ```elixir
 iex> :timer.tc(fn -> IO.puts LeibnizFormula.calc() end) |> elem(0) |>  Kernel./(1000000)
 ```
